@@ -1,5 +1,3 @@
-import { ChevronDown } from "lucide-react";
-
 export default function Navbar() {
   return (
     <nav className="text-white py-4">
@@ -20,7 +18,6 @@ export default function Navbar() {
               className="flex items-center gap-2 hover:text-gray-300 text-black"
             >
               Tentang Kami
-              <ChevronDown size={18} />
             </a>
           </li>
           <li>
@@ -29,25 +26,22 @@ export default function Navbar() {
               className="flex items-center gap-2 hover:text-gray-300 text-black"
             >
               Program
-              <ChevronDown size={18} />
             </a>
           </li>
           <li>
             <a
-              href="#Guru"
+              href="#jurusan"
               className="flex items-center gap-2 hover:text-gray-300 text-black"
             >
-              Guru
-              <ChevronDown size={18} />
+              Jurusan
             </a>
           </li>
           <li>
             <a
-              href="#Guru"
+              href="#eskul"
               className="flex items-center gap-2 hover:text-gray-300 text-black"
             >
-              Siswa
-              <ChevronDown size={18} />
+              Eskul
             </a>
           </li>
           <li>
@@ -56,7 +50,6 @@ export default function Navbar() {
               className="flex items-center gap-2 hover:text-gray-300 text-black"
             >
               Berita
-              <ChevronDown size={18} />
             </a>
           </li>
           <li>
@@ -64,8 +57,7 @@ export default function Navbar() {
               href="#Guru"
               className="flex items-center gap-2 hover:text-gray-300 text-black"
             >
-              Fitur
-              <ChevronDown size={18} />
+              Alumni
             </a>
           </li>
         </ul>
