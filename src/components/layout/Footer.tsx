@@ -44,8 +44,10 @@ export default function Footer() {
               <FaYoutube />
             </a>
             <a
-              href="#"
+              href="https://www.tiktok.com/@iptmdjirin57?_r=1&_t=ZS-99Py3wAoTbO"
               className="text-4xl hover:scale-110 transition-transform duration-300"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FaTiktok />
             </a>
