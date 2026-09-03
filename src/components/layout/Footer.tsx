@@ -24,13 +24,15 @@ export default function Footer() {
         <div className="text-white text-center">
           <div className="flex justify-center items-center gap-6 mb-5">
             <a
-              href="#"
+              href="https://www.instagram.com/smkdjirin1/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-4xl hover:scale-110 transition-transform duration-300"
             >
               <FaInstagram />
             </a>
             <a
-              href="#"
+              href=""
               className="text-4xl hover:scale-110 transition-transform duration-300"
             >
               <FaFacebook />
