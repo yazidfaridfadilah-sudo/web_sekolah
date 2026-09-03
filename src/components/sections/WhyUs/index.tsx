@@ -3,7 +3,7 @@ import TanganIcon from "../../../assets/Tangan.png";
 const features = [
   {
   title: "Fasilitas Lengkap",
-  desc: "Penunjang belajar dengan kualitas terbaik",
+  desc: "Penunjang belajar dengan kualitas terbaikk",
   icon: (
     <svg viewBox="0 0 16 16" className="w-10 h-10" shapeRendering="crispEdges">
       {/* Monitor frame */}
