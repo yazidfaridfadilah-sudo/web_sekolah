@@ -16,7 +16,7 @@ export default function Navbar() {
           </li>
           <li>
             <a
-              href="#Alumni"
+              href="#tentang-kami"
               className="flex items-center gap-2 hover:text-gray-300 text-black"
             >
               Tentang Kami
@@ -25,7 +25,7 @@ export default function Navbar() {
           </li>
           <li>
             <a
-              href="#Program"
+              href="#whyus"
               className="flex items-center gap-2 hover:text-gray-300 text-black"
             >
               Program

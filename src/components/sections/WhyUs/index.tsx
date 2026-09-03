@@ -96,7 +96,7 @@ const features = [
 
 export default function Whyus() {
   return (
-    
+    <section id="whyus">
     <div className="min-h-screen bg-[#fdfbfb] flex items-center justify-center p-6">
       <div >
         {/* side accent bars */}
@@ -136,6 +136,7 @@ export default function Whyus() {
         </div>
       </div>
     </div>
+    </section>
   );
 }
 
