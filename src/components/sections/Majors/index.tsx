@@ -1,11 +1,20 @@
 export default function Majors() {
   return (
-    <div className=" flex-col relatif inset-e-4 min-h-screen flex items-center justify-center">
-      <p className="text-4xl text-bold">Jurusan Smk-AL Muhadjirin 1 </p>
-      <p className="text-4xl text-amber-300">Bekasi</p>
+    <section id="Majors">
+    <div className="flex-col relatif inset-e-4 min-h-screen flex items-center justify-center">
+      <div className="text-center mb-12">
+        <h1 className="text-3xl font-bold">
+          Jurusan Di{" "}
+          <span className="text-yellow-400">SMK 1 Al Muhadjirin</span>
+        </h1>
+
+        <h2 className="text-3xl font-bold text-black">
+           Bekasi
+        </h2>
       <p  className="text-gray-400 text-lg">Pilihan program keahlian di SMK Al-Muhadjirin</p>
 
-      
+      </div>
     </div>
+    </section>
   );
 }
