@@ -1,6 +1,6 @@
 export default function Navbar() {
   return (
-    <nav className="text-white py-4">
+    <nav className="fixed top-0 left-0 z-50 w-full bg-white shadow-md text-white py-4">
       <div className="container mx-auto flex justify-between items-center">
         <h1 className="text-5xl font-bold">
           <span className="text-yellow-400">SM</span>
@@ -8,7 +8,7 @@ export default function Navbar() {
         </h1>
         <ul className="flex gap-15">
           <li>
-            <a href="#Beranda" className="hover:text-gray-300 text-amber-300">
+            <a href="#hero" className="hover:text-gray-300 text-amber-300">
               Beranda
             </a>
           </li>
