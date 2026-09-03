@@ -107,7 +107,7 @@ export default function Whyus() {
           {/* Heading */}
           <div className="text-center mb-12">
             <h1 className="text-2xl sm:text-3xl font-bold text-[#1a1a1a] leading-snug">
-              Kenapa Harus <span className="text-[#ba4545]">SMK AL-MUHADJIRIN 1</span>
+              Kenapa Harus <span className="text-yellow-400">SMK AL-MUHADJIRIN 1</span>
               <br />
               Bekasi?
             </h1>
