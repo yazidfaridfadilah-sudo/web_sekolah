@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section className="bg-white flex items-center justify-between px-20">
       <div className="relative top-8">
-        <div className="text-7xl space-y-8 font-bold">
+        <div className="text-7xl space-y-8 font-extrabold">
           <h1 className="text-black">SMK AL</h1>
           <h1>
             <span className="text-yellow-400">MUHADJIRIN</span>
