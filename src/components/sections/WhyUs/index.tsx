@@ -3,7 +3,7 @@ import TanganIcon from "../../../assets/Tangan.png";
 const features = [
   {
   title: "Fasilitas Lengkap",
-  desc: "Penunjang belajar dengan kualitas terbaikk",
+  desc: "Penunjang belajar dengan kualitas terbaik",
   icon: (
     <svg viewBox="0 0 16 16" className="w-10 h-10" shapeRendering="crispEdges">
       {/* Monitor frame */}
@@ -97,8 +97,8 @@ const features = [
 export default function Whyus() {
   return (
     
-    <div className="min-h-screen bg-[#f9f8f8] flex items-center justify-center p-6">
-      <div className="relative w-full max-w-5xl bg-white shadow-sm overflow-hidden">
+    <div className="min-h-screen bg-[#fdfbfb] flex items-center justify-center p-6">
+      <div >
         {/* side accent bars */}
         <div className="absolute left-0 top-0 h-full w-1.5 bg-[#fefefe]" />
         <div className="absolute left-1.5 top-0 h-full w-1.5 bg-[#fcfafa]" />
