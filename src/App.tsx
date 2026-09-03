@@ -9,6 +9,7 @@ import Gallery from "./components/sections/Gallery";
 import Alumni from "./components/sections/Alumni";
 import Footer from "./components/layout/Footer";
 import SchoolProfile from "./components/sections/SchoolProfile";
+import Ui from "./components/sections/Majors/Ui";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <WhyUs />
       <SchoolProfile />
       <Majors />
+      <Ui />
       <Extracurricular />
       <News />
       <Gallery />

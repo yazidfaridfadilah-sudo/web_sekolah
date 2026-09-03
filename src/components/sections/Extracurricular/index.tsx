@@ -1,8 +1,8 @@
 export default function Extracurricular() {
   return (
-    <section className="bg-[#cfd0da] py-16">
+    <section id="eskul" className="bg-white py-16">
 
-      {/* HEADER */}
+      
       <div className="text-center mb-12">
         <h1 className="text-3xl font-bold">
           Ekstrakulikuler Di{" "}
@@ -18,7 +18,7 @@ export default function Extracurricular() {
         </p>
       </div>
 
-      {/* CARD */}
+      
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8 px-10">
 
         {/* CARD 1 */}
@@ -32,7 +32,7 @@ export default function Extracurricular() {
           </p>
         </div>
 
-        {/* CARD 2 */}
+        
         <div className="bg-white rounded-2xl shadow-lg p-6 text-center hover:scale-105 transition">
           <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-red-100 flex items-center justify-center text-2xl">
             ➕
@@ -43,7 +43,7 @@ export default function Extracurricular() {
           </p>
         </div>
 
-        {/* CARD 3 */}
+        
         <div className="bg-white rounded-2xl shadow-lg p-6 text-center hover:scale-105 transition">
           <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gray-200 flex items-center justify-center text-2xl">
             🏔️
@@ -54,7 +54,7 @@ export default function Extracurricular() {
           </p>
         </div>
 
-        {/* CARD 4 */}
+        
         <div className="bg-white rounded-2xl shadow-lg p-6 text-center hover:scale-105 transition">
           <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-blue-100 flex items-center justify-center text-2xl">
             🏐
