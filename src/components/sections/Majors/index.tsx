@@ -1,6 +1,6 @@
 export default function Majors() {
   return (
-    <section id="Majors">
+    <section id="jurusan">
     <div className="flex-col relatif inset-e-4 min-h-screen flex items-center justify-center">
       <div className="text-center mb-12">
         <h1 className="text-3xl font-bold">
