@@ -62,7 +62,7 @@ export default function Navbar() {
           </li>
           <li>
             <a
-              href="#Guru"
+              href="#alumni"
               className="flex items-center gap-2 hover:text-gray-300 text-black"
             >
               Alumni
