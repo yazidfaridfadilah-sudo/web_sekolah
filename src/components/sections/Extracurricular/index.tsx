@@ -14,13 +14,13 @@ export default function Extracurricular() {
           <span className="text-black"> Bekasi</span>
         </h2>
 
-        <p className="text-gray-500 mt-2">
+        <p className="text-gray-500 mt-2 -ml-7">
           pilihan Ekstrakulikuler di SMK AL Muhadjirin 1 Bekasi
         </p>
       </div>
 
 
-    <div className="grid grid-cols-1 md:grid-cols-4 px-20 gap-8 mx-auto">
+    <div className="grid grid-cols-1 md:grid-cols-4 px-20 gap-8 mx-auto ml-40">
 
 
         <div className="bg-white rounded-2xl shadow-lg p-6 text-left w-60 hover:scale-105 transition">
