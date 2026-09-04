@@ -25,7 +25,7 @@ export default function Footer() {
 
             <div className="mt-8 flex items-center gap-6">
               <a
-                href="https://www.instagram.com/smkdjirin1/"
+                href="https://www.instagram.com/fiboys13/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-4xl transition-transform duration-300 hover:scale-110"
