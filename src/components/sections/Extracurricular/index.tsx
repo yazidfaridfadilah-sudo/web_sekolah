@@ -20,7 +20,7 @@ export default function Extracurricular() {
       </div>
 
 
-      <div className="grid grid-cols-1 md:grid-cols-4 px-60">
+      <div className="grid grid-cols-1 md:grid-cols-4 px-40 gap-8 justify-center">
 
 
         <div className="bg-white rounded-2xl shadow-lg p-6 text-left w-60 hover:scale-105 transition">
