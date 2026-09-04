@@ -84,6 +84,7 @@ function NewsCard({ item }: { item: NewsItem }) {
 
 export default function BeritaSection() {
   return (
+    <section id="berita">
     <div className="min-h-screen bg-[#f9e814] py-16 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-10">
@@ -109,5 +110,6 @@ export default function BeritaSection() {
         </div>
       </div>
     </div>
+    </section>
   );
 }
