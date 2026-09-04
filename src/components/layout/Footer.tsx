@@ -7,6 +7,7 @@ import {
 
 export default function Footer() {
   return (
+    <section id="footer">
     <footer className="bg-yellow-400 px-10 md:px-20 py-16">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-start gap-12">
         <div className="text-white text-center md:text-left">
@@ -63,5 +64,6 @@ export default function Footer() {
         </div>
       </div>
     </footer>
+    </section>
   );
 }

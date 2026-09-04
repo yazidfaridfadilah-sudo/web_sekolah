@@ -1,8 +1,9 @@
 
 function Ui (){
 return (
+    
     <div>
-    <div className=" flex flex-15 ml-5 mt-10">
+    <div className=" items-center justify-center flex flex-15  mt-10">
     <p className="bg-yellow-300 w-45 h-43 ml-10 rounded-2xl -mt-45">
         <img src="major1.png" className="w-10 h-10 mt-3 ml-3"/>
         <p className="font-bold text-base ml-3 mt-2 ">Teknik Komputer </p>
@@ -34,7 +35,7 @@ return (
         <p className="text-sm text-gray-600 ml-3 mt-2">Details</p>
     </p>
     </div>
-    <div className=" flex mt-60 ml-5 ">
+    <div className="justify-center flex mt-60  ">
     <p className="bg-yellow-300 w-45 h-43 ml-10 rounded-2xl -mt-45">
         <img src="major6.png" className="w-10 h-10 mt-3 ml-3"/>
         <p className="font-bold text-base ml-3 mt-2 ">Teknik Audio</p>
@@ -67,6 +68,7 @@ return (
     </p>
     </div>
 </div>
+
     )
 }
 export default Ui;
