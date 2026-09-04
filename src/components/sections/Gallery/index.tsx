@@ -38,7 +38,7 @@ export default function Gallery() {
         <h2 className="mb-5 text-center text-2xl font-bold leading-snug text-black md:text-[25px]">
           Foto Dokumentasi Kegiatan
           <br />
-          Smk Almuhadjirin Bekasi
+          SMK AL-Muhadjirin Bekasi
         </h2>
 
         <div className="grid w-full max-w-[493px] grid-cols-1 gap-4 sm:grid-cols-[184px_1fr]">
