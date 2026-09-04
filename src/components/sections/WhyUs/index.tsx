@@ -15,6 +15,7 @@ const features = [
   desc: "Berada di lingkungan yang nyaman dan asri",
   icon: (
   <img src={Gedungicon} className="w-10 h-10" alt="Lingkungan Nyaman" />
+
   )
 },
   {
@@ -61,9 +62,11 @@ export default function Whyus() {
             {features.map((f) => (
               <div
                 key={f.title}
-                className="bg-[#faf8f8] rounded-2xl px-5 py-8 flex flex-col items-center text-center gap-4"
+                className="group bg-[#faf8f8] rounded-2xl px-5 py-8 flex flex-col items-center text-center gap-4
+               transition-all duration-300 ease-in-out
+               hover:-translate-y-2 hover:shadow-lg"
               >
-                <div className="text-[#1a1a1a]">{f.icon}</div>
+                <div className="text-[#1a1a1a] transition-transform duration-300 group-hover:scale-110">{f.icon}</div>
                 <div>
                   <h3 className="font-bold text-[#1a1a1a] text-[15px] mb-1.5">
                     {f.title}
