@@ -13,7 +13,7 @@ export default function SchoolProfile() {
           </span>
         </h1>
 
-        <h2 className="mt-2 text-xl font-bold text-black md:text-2xl">
+        <h2 className="mt-2 text-xl font-bold text-black md:text-3xl">
           Bekasi
         </h2>
       </div>
@@ -48,6 +48,7 @@ export default function SchoolProfile() {
 
           <button
             className="
+              -ml-7
               mt-8
               rounded-full
               bg-yellow-500
