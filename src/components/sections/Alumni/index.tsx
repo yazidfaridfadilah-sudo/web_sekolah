@@ -51,7 +51,7 @@ export default function Alumni() {
           <div className="flex gap-6.5">
             <img
               src="Apeng.jpeg"
-              alt="syahrini Alextra Ayu"
+              alt="Yajid Farid fadhillah ST"
               className="w-45.5 h-52.5 object-cover shrink-0 border-2 border-blue-700 p-0.75 box-content"
             />
             <div className="max-w-43">
