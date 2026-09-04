@@ -1,7 +1,7 @@
 
 export default function Alumni() {
   return (
-    <section id="berita" className="relative bg-white w-full py-16 overflow-hidden">
+    <section id="alumni" className="relative bg-white w-full py-16 overflow-hidden">
       {/* garis hijau tipis di tepi kiri */}
       <div className="absolute left-0 top-0 h-full w-1.5g-[#2f5233]" />
 
