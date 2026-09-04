@@ -42,7 +42,9 @@ export default function Footer() {
               </a>
 
               <a
-                href="#"
+                href="https://www.youtube.com/@fardhurify"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-4xl transition-transform duration-300 hover:scale-110"
               >
                 <FaYoutube />

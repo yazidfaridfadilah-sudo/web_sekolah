@@ -44,7 +44,7 @@ export default function Navbar() {
 }, []);
 
   return (
-    <nav className="fixed top-0 left-0 z-50 w-full bg-white shadow-md flex gap-10 text-white py-4">
+    <nav className="fixed top-0 left-0 z-50 w-full bg-white shadow-md text-white py-4 px-6">
       <div className="container mx-auto flex justify-between items-center">
         <h1 className="text-5xl font-bold">
           <span className="text-yellow-400">SM</span>
