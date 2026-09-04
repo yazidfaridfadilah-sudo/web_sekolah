@@ -1,4 +1,3 @@
-
 interface NewsItem {
   date: string;
   title: string;
@@ -59,11 +58,12 @@ const news: NewsItem[] = [
 
 function NewsCard({ item }: { item: NewsItem }) {
   return (
+    <article className={`group relative overflow-hidden`}>
     <div className="bg-white rounded-xl overflow-hidden shadow-sm flex flex-col">
       <img
         src={item.image}
         alt={item.title}
-        className="w-full h-36 object-cover"
+        className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
       />
       <div className="p-4 flex flex-col gap-2">
         <span className="text-xs text-gray-400">{item.date}</span>
@@ -79,6 +79,7 @@ function NewsCard({ item }: { item: NewsItem }) {
         </a>
       </div>
     </div>
+    </article>
   );
 }
 
