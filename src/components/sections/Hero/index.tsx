@@ -2,7 +2,7 @@ import { ChevronRight } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="bg-white flex items-center justify-between px-20">
+    <section id="hero" className="bg-white flex items-center justify-between px-20">
       <div className="relative top-8">
         <div className="text-7xl space-y-8 font-extrabold">
           <h1 className="text-black">SMK AL</h1>
@@ -32,7 +32,7 @@ export default function Hero() {
             <button
               className="
                 flex items-center gap-2 bg-gray-200 px-11 py-4 text-amber-400
-                rounded-4xl font-bold shadow-[0_12px_20px_rgba(0,0,0,0.25)] hover:text-gray-500 transition "
+                rounded-4xl font-bold shadow-[0_12px_20px_rgba(0,0,0,0.25)] hover:text-gray-500 transition"
             >
               VIDEO
               <ChevronRight size={20} />
@@ -43,7 +43,7 @@ export default function Hero() {
       </div>
       <img
         src="images/fotoSekolah.jpg"
-        className="w-100 mt-15 mr-20"
+        className="w-100 mt-43 mr-20"
       />
 
     </section>

@@ -33,8 +33,8 @@ function GalleryCard({
 
 export default function Gallery() {
   return (
-    <section className="bg-[#fff500] px-4 py-10 sm:px-8 md:py-0">
-      <div className="mx-auto flex min-h-[550px] max-w-[850px] flex-col items-center justify-center bg-[#fff500] px-5 py-12 sm:px-10">
+    <section className="bg-[#f9e814] px-4 py-10 sm:px-8 md:py-0">
+      <div className="mx-auto flex min-h-[550px] max-w-[850px] flex-col items-center justify-center bg-[#f9e814] px-5 py-12 sm:px-10">
         <h2 className="mb-5 text-center text-2xl font-bold leading-snug text-black md:text-[25px]">
           Foto Dokumentasi Kegiatan
           <br />
