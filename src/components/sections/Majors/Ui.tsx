@@ -2,7 +2,7 @@
 function Ui (){
 return (
     
-    <div>
+    <div className="-mt-30">
     <div className=" items-center justify-center flex flex-15  mt-10">
     <p className="bg-yellow-300 w-45 h-43 ml-10 rounded-2xl -mt-45">
         <img src="major1.png" className="w-10 h-10 mt-3 ml-3"/>
