@@ -3,67 +3,120 @@ import {
   FaFacebook,
   FaYoutube,
   FaTiktok,
+  FaChevronUp,
 } from "react-icons/fa";
 
 export default function Footer() {
   return (
     <section id="footer">
-    <footer className="bg-yellow-400 px-10 md:px-20 py-16">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-start gap-12">
-        <div className="text-white text-center md:text-left">
-          <h1 className="text-3xl font-bold mb-8">
-            SMK1
-          </h1>
-          <p className="text-lg font-medium leading-relaxed max-w-md">
-            Sekolah adalah tempat mencetak penerus bangsa
-            <br />
-            yang berkualitas dan berprestasi di segala bidang
-            <br />
-            yang dapat bersaing di dunia internasional
-          </p>
-        </div>
-        <div className="text-white text-center">
-          <div className="flex justify-center items-center gap-6 mb-5">
-            <a
-              href="https://www.instagram.com/smkdjirin1/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-4xl hover:scale-110 transition-transform duration-300"
-            >
-              <FaInstagram />
-            </a>
-            <a
-              href=""
-              className="text-4xl hover:scale-110 transition-transform duration-300"
-            >
-              <FaFacebook />
-            </a>
-            <a
-              href="#"
-              className="text-4xl hover:scale-110 transition-transform duration-300"
-            >
-              <FaYoutube />
-            </a>
-            <a
-              href="https://www.tiktok.com/@iptmdjirin57?_r=1&_t=ZS-99Py3wAoTbO"
-              className="text-4xl hover:scale-110 transition-transform duration-300"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaTiktok />
-            </a>
-          </div>
-          <div className="text-xl md:text-2xl font-bold leading-relaxed text-justify">
-            <p>
-              Dibuat oleh Pkl_2026,
+      <footer className="bg-yellow-400 px-10 py-16 md:px-20">
+        <div className="mx-auto flex max-w-7xl items-start justify-between gap-10">
+          <div className="text-left text-white">
+            <h1 className="mb-8 text-3xl font-bold">
+              SMK1
+            </h1>
+
+            <p className="max-w-md text-lg font-medium leading-relaxed">
+              Sekolah adalah tempat mencetak penerus bangsa
+              <br />
+              yang berkualitas dan berprestasi di segala bidang
+              <br />
+              yang dapat bersaing di dunia internasional
             </p>
-            <p>
-              Menggunakan Tailwind CSS dan JS. @2026
-            </p>
+
+            <div className="mt-8 flex items-center gap-6">
+              <a
+                href="https://www.instagram.com/smkdjirin1/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-4xl transition-transform duration-300 hover:scale-110"
+              >
+                <FaInstagram />
+              </a>
+
+              <a
+                href="#"
+                className="text-4xl transition-transform duration-300 hover:scale-110"
+              >
+                <FaFacebook />
+              </a>
+
+              <a
+                href="#"
+                className="text-4xl transition-transform duration-300 hover:scale-110"
+              >
+                <FaYoutube />
+              </a>
+
+              <a
+                href="https://www.tiktok.com/@iptmdjirin57"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-4xl transition-transform duration-300 hover:scale-110"
+              >
+                <FaTiktok />
+              </a>
+            </div>
+
+            <div className="mt-8 flex items-center w-fit gap-2 text-xl font-bold border-2 px-4 py-2 border-b-gray-100">
+              <div className="flex flex-col">
+                <FaChevronUp className="text-2xl" />
+                <FaChevronUp className="-mt-3 text-2xl" />
+              </div>
+             
+              <a href="#hero">
+                KEMBALI KE ATAS
+              </a>
+            </div>
+          </div>
+
+          <div className="text-left text-white">
+
+            <h2 className="mb-5 text-2xl font-bold">
+              SITE MAP
+            </h2>
+
+            <ul className="space-y-3 text-lg">
+              <li>
+                <a href="#hero" className="hover:underline">
+                  Beranda
+                </a>
+              </li>
+              <li>
+                <a href="#tentang-kami" className="hover:underline">
+                  Tentang Kami
+                </a>
+              </li>
+              <li>
+                <a href="#jurusan" className="hover:underline">
+                  Jurusan
+                </a>
+              </li>
+              <li>
+                <a href="#eskul" className="hover:underline">
+                  Ekstrakurikuler
+                </a>
+              </li>
+              <li>
+                <a href="#berita" className="hover:underline">
+                  Berita
+                </a>
+              </li>
+              <li>
+                <a href="#galeri" className="hover:underline">
+                  Galeri
+                </a>
+              </li>
+              <li>
+                <a href="#alumni" className="hover:underline">
+                  Alumni
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
     </section>
   );
 }
+

@@ -46,10 +46,18 @@ export default function Navbar() {
           </li>
           <li>
             <a
-              href="#Guru"
+              href="#berita"
               className="flex items-center gap-2 hover:text-gray-300 text-black"
             >
               Berita
+            </a>
+          </li>
+          <li>
+            <a
+              href="#galeri"
+              className="flex items-center gap-2 hover:text-gray-300 text-black"
+            >
+              Galeri
             </a>
           </li>
           <li>
