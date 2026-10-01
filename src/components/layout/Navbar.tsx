@@ -7,7 +7,7 @@ const menus = [
   { name: "Eskul", href: "/eskul" },
   { name: "Berita", href: "/berita" },
   { name: "Galeri", href: "/galeri" },
-  { name: "Alumni", href: "/alumni" },
+  { name: "Buku Tahunan 2024/2027", href: "/alumni" },
 ];
 
 const aboutLinks = [
@@ -15,6 +15,7 @@ const aboutLinks = [
   { name: "Guru", href: "/guru" },
   { name: "Siswa", href: "/siswa" },
   { name: "Staff Tata Usaha", href: "/staff-tata-usaha" },
+  { name: "Mata Pelajaran", href: "/mata-pelajaran" },
 ];
 
 function getActiveMenu(path: string) {

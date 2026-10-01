@@ -15,6 +15,7 @@ import SchoolContact from "./components/sections/SchoolContact";
 import SchoolDirectory, {
   type DirectoryPage,
 } from "./components/sections/SchoolDirectory";
+import Subjects from "./components/sections/Subjects";
 import ScrollExperience from "./components/layout/ScrollExperience";
 
 type Page =
@@ -34,6 +35,7 @@ function getPage(path: string): Page {
     "profil-sekolah": SchoolProfile,
     contact: SchoolContact,
     jurusan: Majors,
+    "mata-pelajaran": Subjects,
     eskul: Extracurricular,
     berita: News,
     galeri: Gallery,
