@@ -4,124 +4,111 @@ import {
   FaYoutube,
   FaTiktok,
   FaWhatsapp,
-  FaChevronUp,
 } from "react-icons/fa";
+
+const socialLinks = [
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/fiboys13/",
+    Icon: FaInstagram,
+  },
+  {
+    label: "Facebook",
+    href: "https://www.facebook.com/gaby.uwoe",
+    Icon: FaFacebook,
+  },
+  {
+    label: "YouTube",
+    href: "https://www.youtube.com/@fardhurify",
+    Icon: FaYoutube,
+  },
+  {
+    label: "TikTok",
+    href: "https://www.tiktok.com/@iptmdjirin57",
+    Icon: FaTiktok,
+  },
+  {
+    label: "WhatsApp",
+    href: "https://wa.me/628561831850",
+    Icon: FaWhatsapp,
+  },
+];
+
+const siteLinks = [
+  { name: "Beranda", href: "/" },
+  { name: "Profil Sekolah", href: "/profil-sekolah" },
+  { name: "Guru", href: "/guru" },
+  { name: "Siswa", href: "/siswa" },
+  { name: "Staff Tata Usaha", href: "/staff-tata-usaha" },
+  { name: "Program", href: "/program" },
+  { name: "Jurusan", href: "/jurusan" },
+  { name: "Ekstrakurikuler", href: "/eskul" },
+  { name: "Berita", href: "/berita" },
+  { name: "Galeri", href: "/galeri" },
+  { name: "Alumni", href: "/alumni" },
+];
 
 export default function Footer() {
   return (
-    <section id="footer">
-      <footer className="bg-yellow-400 px-10 py-16 md:px-20">
-        <div className="mx-auto flex max-w-7xl items-start  gap-100">
-          <div className="text-left text-white">
-            <h1 className="mb-8 text-3xl font-bold">SMK1</h1>
-
-            <p className="max-w-md text-lg font-medium leading-relaxed">
-              Sekolah adalah tempat mencetak penerus bangsa
-              <br />
-              yang berkualitas dan berprestasi di segala bidang
-              <br />
-              yang dapat bersaing di dunia internasional
-            </p>
-
-            <div className="mt-8 flex items-center gap-6">
+    <footer
+      id="footer"
+      className="scroll-mt-20 bg-gradient-to-br from-[#352b17] via-[#292516] to-[#1f211d] px-5 py-14 text-white sm:px-8 sm:py-16"
+    >
+      <div className="mx-auto grid max-w-7xl gap-12 md:grid-cols-[1.5fr_0.7fr]">
+        <div>
+          <a href="/" className="inline-flex items-center">
+            <span className="text-lg font-extrabold tracking-tight">
+              SMK Al-Muhadjirin 1
+            </span>
+          </a>
+          <p className="mt-5 max-w-lg text-sm leading-7 text-slate-300">
+            Membentuk generasi yang berkarakter, kompeten, dan siap melangkah
+            menuju masa depan.
+          </p>
+          <div className="mt-6 flex flex-wrap gap-2">
+            {socialLinks.map(({ label, href, Icon }) => (
               <a
-                href="https://www.instagram.com/fiboys13/"
+                key={label}
+                href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-4xl transition-transform duration-300 hover:scale-110"
+                aria-label={label}
+                className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/15 text-slate-300 transition hover:border-amber-400 hover:bg-amber-400 hover:text-slate-950"
               >
-                <FaInstagram />
+                <Icon size={17} />
               </a>
-
-              <a
-                href="https://www.facebook.com/gaby.uwoe"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-4xl transition-transform duration-300 hover:scale-110"
-              >
-                <FaFacebook />
-              </a>
-
-              <a
-                href="https://www.youtube.com/@fardhurify"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-4xl transition-transform duration-300 hover:scale-110"
-              >
-                <FaYoutube />
-              </a>
-
-              <a
-                href="https://www.tiktok.com/@iptmdjirin57"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-4xl transition-transform duration-300 hover:scale-110"
-              >
-                <FaTiktok />
-              </a>
-              <a
-                href="https://wa.me/628561831850"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-4xl transition-transform duration-300 hover:scale-110"
-              >
-                <FaWhatsapp />
-              </a>
-            </div>
-
-            <div className="mt-8 flex items-center w-fit gap-2 text-xl font-bold border-2 px-4 py-2 border-b-gray-100">
-              <div className="flex flex-col">
-                <FaChevronUp className="text-2xl" />
-                <FaChevronUp className="-mt-3 text-2xl" />
-              </div>
-
-              <a href="#hero">KEMBALI KE ATAS</a>
-            </div>
-          </div>
-
-          <div className="text-left text-white">
-            <h2 className="mb-5 text-2xl font-bold">SITE MAP</h2>
-
-            <ul className="space-y-3 text-lg">
-              <li>
-                <a href="#hero" className="hover:underline">
-                  Beranda
-                </a>
-              </li>
-              <li>
-                <a href="#tentang-kami" className="hover:underline">
-                  Tentang Kami
-                </a>
-              </li>
-              <li>
-                <a href="#jurusan" className="hover:underline">
-                  Jurusan
-                </a>
-              </li>
-              <li>
-                <a href="#eskul" className="hover:underline">
-                  Ekstrakurikuler
-                </a>
-              </li>
-              <li>
-                <a href="#berita" className="hover:underline">
-                  Berita
-                </a>
-              </li>
-              <li>
-                <a href="#galeri" className="hover:underline">
-                  Galeri
-                </a>
-              </li>
-              <li>
-                <a href="#alumni" className="hover:underline">
-                  Alumni
-                </a>
-              </li>
-            </ul>
+            ))}
           </div>
         </div>
-      </footer>
-    </section>
+
+        <div>
+          <h2 className="text-sm font-bold uppercase tracking-[0.16em] text-amber-400">
+            Navigasi
+          </h2>
+          <ul className="mt-5 grid grid-cols-2 gap-x-5 gap-y-3">
+            {siteLinks.map((link) => (
+              <li key={link.href}>
+                <a
+                  href={link.href}
+                  className="text-sm text-slate-300 transition hover:text-amber-300"
+                >
+                  {link.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      <div className="mx-auto mt-12 flex max-w-7xl flex-col gap-3 border-t border-white/10 pt-6 text-xs text-slate-400 sm:flex-row sm:items-center sm:justify-between">
+        <p>
+          © {new Date().getFullYear()} SMK Al-Muhadjirin 1 Bekasi. Hak cipta
+          dilindungi.
+        </p>
+        <a href="/" className="font-semibold transition hover:text-amber-300">
+          Kembali ke beranda ↑
+        </a>
+      </div>
+    </footer>
   );
 }

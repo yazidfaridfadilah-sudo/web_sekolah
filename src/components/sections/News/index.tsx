@@ -1,3 +1,5 @@
+import { ArrowUpRight, CalendarDays } from "lucide-react";
+
 interface NewsItem {
   date: string;
   title: string;
@@ -8,109 +10,115 @@ interface NewsItem {
 const news: NewsItem[] = [
   {
     date: "29 Juli 2026",
-    title: "Safety Campaign: Membangun Budaya Tertib Berlalu Lintas di Lingkungan sekolah",
-    author: "admin jirin",
-    image: "images/Rectangle 36.jpg",
+    title:
+      "Safety Campaign: Membangun Budaya Tertib Berlalu Lintas di Lingkungan Sekolah",
+    author: "Admin",
+    image: "/images/Rectangle 36.jpg",
   },
   {
     date: "29 Juli 2026",
-    title: "SMK Al Muhadjirin 1 Bekasi Perkuat Kerja Sama dengan Dunia Industri",
-    author: "admin jirin",
-    image: "images/Rectangle 42.jpg",
+    title: "SMK Al-Muhadjirin 1 Bekasi Perkuat Kerja Sama dengan Dunia Industri",
+    author: "Admin",
+    image: "/images/Rectangle 42.jpg",
   },
   {
     date: "29 Juli 2026",
-    title: "Aksi Peduli Lingkungan dan Bakti Sosial Siswa SMK Al Muhadjirin",
-    author: "admin jirin",
-    image: "images/Rectangle 43.jpg",
+    title: "Aksi Peduli Lingkungan dan Bakti Sosial Siswa",
+    author: "Admin",
+    image: "/images/Rectangle 43.jpg",
   },
   {
     date: "29 Juli 2025",
-    title: "Upacara Bendera Sebagai Wujud Disiplin dan Nasionalisme",
-    author: "admin jirin",
-    image: "images/Rectangle 45.jpg",
+    title: "Upacara Bendera sebagai Wujud Disiplin dan Nasionalisme",
+    author: "Admin",
+    image: "/images/Rectangle 45.jpg",
   },
   {
     date: "26 Juli 2026",
     title: "Pembagian Rapor Semester Tahun Ajaran 2026/2027",
-    author: "admin jirin",
-    image: "images/Rectangle 52.jpg",
+    author: "Admin",
+    image: "/images/Rectangle 52.jpg",
   },
   {
     date: "29 Juli 2026",
-    title: "Penerimaan Peserta Didik Baru (PPDB) SMK Al Muhadjirin 1 Bekasi Dibuka",
-    author: "admin jirin",
-    image: "images/Rectangle 53.jpg",
+    title: "Penerimaan Peserta Didik Baru SMK Al-Muhadjirin 1 Bekasi",
+    author: "Admin",
+    image: "/images/Rectangle 53.jpg",
   },
   {
     date: "20 Juli 2026",
     title: "Pelaksanaan Uji Kompetensi Keahlian Berjalan Lancar",
-    author: "admin jirin",
-    image: "images/Rectangle 55.jpg",
+    author: "Admin",
+    image: "/images/Rectangle 55.jpg",
   },
   {
     date: "29 Juli 2026",
-    title: "Peringatan Hari Santri Nasional di SMK Al Muhadjirin 1 Bekasi",
-    author: "admin jirin",
-    image: "images/Rectangle 56.jpg",
+    title: "Peringatan Hari Santri Nasional di SMK Al-Muhadjirin 1 Bekasi",
+    author: "Admin",
+    image: "/images/Rectangle 56.jpg",
   },
 ];
 
 function NewsCard({ item }: { item: NewsItem }) {
   return (
-    <article className={`group relative overflow-hidden`}>
-    <div className="bg-white rounded-xl overflow-hidden shadow-sm flex flex-col">
-      <img
-        src={item.image}
-        alt={item.title}
-        className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-      />
-      <div className="p-4 flex flex-col gap-2">
-        <span className="text-xs text-gray-400">{item.date}</span>
-        <h3 className="text-sm font-bold text-[#1a1a1a] leading-snug line-clamp-3">
+    <article     className="group overflow-hidden rounded-[1.6rem] border border-amber-200/70 bg-[#fffefa] shadow-[0_14px_36px_-26px_rgba(120,80,18,0.45)] transition duration-300 hover:-translate-y-1 hover:border-amber-300 hover:shadow-xl hover:shadow-amber-900/10">
+      <div className="overflow-hidden bg-amber-50">
+        <img
+          src={item.image}
+          alt=""
+          className="aspect-[16/10] w-full object-cover transition duration-500 group-hover:scale-105"
+        />
+      </div>
+      <div className="flex min-h-52 flex-col p-5">
+        <span className="flex items-center gap-2 text-xs font-medium text-slate-500">
+          <CalendarDays size={14} className="text-amber-600" />
+          {item.date}
+        </span>
+        <h3 className="mt-3 text-base font-bold leading-snug text-slate-900">
           {item.title}
         </h3>
-        <span className="text-xs text-gray-400">By : {item.author}</span>
-        <a
-          href="#"
-          className="text-xs font-semibold text-[#2b2fa3] hover:underline mt-1"
-        >
-          Baca Selengkapnya
-        </a>
+        <div className="mt-auto flex items-center justify-between pt-5">
+          <span className="text-xs text-slate-500">Oleh {item.author}</span>
+          <ArrowUpRight
+            size={18}
+            aria-hidden="true"
+            className="text-amber-600 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+          />
+        </div>
       </div>
-    </div>
     </article>
   );
 }
 
-export default function BeritaSection() {
+export default function NewsSection() {
   return (
-    <section id="berita">
-    <div className="min-h-screen bg-[#f9e814] py-16 px-6">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-10">
-          <h1 className="text-2xl sm:text-3xl font-bold text-[#1a1a1a] leading-snug">
-            Berita Terbaru Di SMK
-            <br />
-            Al Muhadjirin 1 Bekasi
-          </h1>
-          <p className="mt-4 text-sm sm:text-base text-[#8a7f1a]">
-            Berita Terbaru Tentang SMK Al Muhadjirin 1 Bekasi
-          </p>
+    <section
+      id="berita"
+      className="scroll-mt-20 bg-gradient-to-br from-[#fff3cf] via-[#fff9e9] to-[#fffdf7] px-5 py-20 sm:px-8 sm:py-24"
+    >
+      <div className="mx-auto max-w-7xl">
+        <div className="mb-12 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <span className="mb-4 inline-flex rounded-full border border-amber-200 bg-white px-4 py-1.5 text-xs font-bold uppercase tracking-[0.16em] text-amber-800">
+              Informasi Sekolah
+            </span>
+            <h2 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
+              Kabar terbaru{" "}
+              <span className="text-amber-600">sekolah</span>
+            </h2>
+            <p className="mt-3 max-w-xl text-sm leading-7 text-slate-600 sm:text-base">
+              Ikuti kegiatan, informasi, dan kabar terbaru dari SMK
+              Al-Muhadjirin 1 Bekasi.
+            </p>
+          </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {news.map((item) => (
             <NewsCard key={item.title} item={item} />
           ))}
         </div>
-        <div className="flex justify-center mt-10">
-          <button className="bg-[#2b2fa3] text-white text-sm font-semibold px-8 py-3 rounded-lg hover:bg-[#23268a] transition-colors">
-            Semua Berita
-          </button>
-        </div>
       </div>
-    </div>
     </section>
   );
 }
